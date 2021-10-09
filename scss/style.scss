@@ -1,0 +1,362 @@
+$primary: #6370E5;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    max-width: 100%;
+}
+
+.jumbo .grid {
+    height: 825px;
+
+    .sub-judul {
+        background-color: $primary;
+        padding: 274px 50px;
+        color: #fff;
+
+        p:nth-child(1) {
+            text-transform: uppercase;
+            font-size: 18px;
+            letter-spacing: 16px;
+        }
+
+        h1 {
+            font-size: 50px;
+            font-weight: 500;
+            padding: 0 0 10px 0;
+        }
+
+        p:nth-child(3) {
+            font-size: 20px;
+        }
+
+        button {
+            margin-top: 30px;
+            padding: 15px 35px;
+            font-size: 15px;
+            letter-spacing: 2px;
+            color: #494949;
+        }
+    }
+
+    .image {
+        background-image: url('/img/jumbo.jpg');
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+
+
+
+.about .grid {
+    .main {
+        background-color: #343434;
+        color: #fff;
+        padding: 285px 50px;
+
+        h1 {
+            font-size: 50px;
+            font-weight: 500;
+            padding: 0 0 10px 0;
+        }
+
+        p {
+            font-size: 16px;
+            padding-right: 120px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .image {
+        div {
+            position: absolute;
+            width: 781px;
+            height: 527px;
+            left: 611px;
+            top: 1005px;
+            background-image: url(/img/about.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}
+
+.product {
+    margin: 210px 150px 300px;
+
+    h1 {
+        font-size: 50px;
+        font-weight: 500;
+    }
+
+    .underline {
+        width: 200px;
+        height: 3px;
+        margin: 0 auto;
+        background-color: #343434;
+        margin-bottom: 40px;
+    }
+
+    .card {
+        margin-top: 40px;
+        color: #fff;
+        display: block;
+
+        p {
+            font-size: 13px;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        img {
+            width: 350px;
+            height: 350px;
+            object-position: center;
+            object-fit: cover;
+        }
+
+        .grid {
+            background-color: $primary;
+            width: 350px;
+            padding: 10px;
+            display: flex;
+
+            .buy {
+                margin-left: auto;
+                margin-right: 10px;
+            }
+
+            button {
+                margin: 20px 0;
+                padding: 5px 30px;
+                border-radius: 30px;
+            }
+        }
+    }
+}
+
+
+// shape
+.custom-shape-divider-bottom-1633511344 {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1633511344 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 184px;
+}
+
+.custom-shape-divider-bottom-1633511344 .shape-fill {
+    fill: $primary;
+}
+
+// Contact
+.contact {
+    background-color: $primary;
+    color: white;
+    padding: 200px 100px 60px;
+
+    h1 {
+        font-size: 50px;
+        font-weight: 500;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        color: #C3C8F8;
+    }
+}
+
+
+
+// Mobile Device
+@media (max-width: 575.98px) {
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .jumbo .grid {
+        height: auto;
+        display: block;
+
+        .sub-judul {
+            background-color: $primary;
+            padding: 200px 30px;
+            color: #fff;
+
+            p:nth-child(1) {
+                text-transform: uppercase;
+                font-size: 9px;
+                letter-spacing: 6px;
+            }
+
+            h1 {
+                font-size: 28px;
+                font-weight: 500;
+                padding: 0 0 10px 0;
+            }
+
+            p:nth-child(3) {
+                font-size: 16px;
+            }
+
+            button {
+                margin-top: 30px;
+                padding: 10px 25px;
+                font-size: 9px;
+                letter-spacing: 2px;
+                color: #494949;
+            }
+        }
+
+        .image {
+            display: none;
+        }
+    }
+
+    .about .grid {
+        display: block;
+
+        .main {
+            background-color: #343434;
+            color: #fff;
+            padding: 125px 30px;
+            display: block;
+
+            h1 {
+                font-size: 28px;
+                font-weight: 500;
+                padding: 0 0 10px 0;
+            }
+
+            p {
+                font-size: 12px;
+                margin-bottom: 20px;
+                text-align: justify;
+                padding-right: 0;
+            }
+        }
+
+        .image {
+            div {
+                display: none;
+            }
+        }
+    }
+
+    .product {
+        margin: 120px 20px 300px;
+        display: block;
+
+        h1 {
+            font-size: 25px;
+            font-weight: 500;
+        }
+
+        .underline {
+            width: 100px;
+            height: 1.5px;
+            margin: 0 auto;
+            background-color: #343434;
+            margin-bottom: 40px;
+        }
+
+        .grid {
+            display: block;
+        }
+
+        .card {
+            margin-top: 40px;
+            color: #fff;
+            display: block;
+
+            p {
+                font-size: 9px;
+            }
+
+            h3 {
+                font-size: 16px;
+            }
+
+            img {
+                width: 100%;
+                height: 200px;
+                object-position: center;
+                object-fit: cover;
+            }
+
+            .grid {
+                background-color: $primary;
+                width: 100%;
+                padding: 5px;
+
+                button {
+                    font-size: 14px;
+                    margin: 20px 0;
+                    padding: 3px 20px;
+                    border-radius: 30px;
+                }
+            }
+        }
+    }
+
+
+
+
+    // shape
+    .custom-shape-divider-bottom-1633511344 {
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+
+    .custom-shape-divider-bottom-1633511344 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 84px;
+    }
+
+    .custom-shape-divider-bottom-1633511344 .shape-fill {
+        fill: $primary;
+    }
+
+    // Contact
+    .contact {
+        background-color: $primary;
+        color: white;
+        padding: 100px 30px 60px;
+
+        h1 {
+            font-size: 25px;
+            font-weight: 500;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            color: #C3C8F8;
+        }
+    }
+
+
+
+}

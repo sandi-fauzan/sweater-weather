@@ -1,0 +1,344 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  max-width: 100%;
+}
+
+.jumbo .grid {
+  height: 825px;
+}
+
+.jumbo .grid .sub-judul {
+  background-color: #6370E5;
+  padding: 274px 50px;
+  color: #fff;
+}
+
+.jumbo .grid .sub-judul p:nth-child(1) {
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 16px;
+}
+
+.jumbo .grid .sub-judul h1 {
+  font-size: 50px;
+  font-weight: 500;
+  padding: 0 0 10px 0;
+}
+
+.jumbo .grid .sub-judul p:nth-child(3) {
+  font-size: 20px;
+}
+
+.jumbo .grid .sub-judul button {
+  margin-top: 30px;
+  padding: 15px 35px;
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: #494949;
+}
+
+.jumbo .grid .image {
+  background-image: url("/img/jumbo.jpg");
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.about .grid .main {
+  background-color: #343434;
+  color: #fff;
+  padding: 285px 50px;
+}
+
+.about .grid .main h1 {
+  font-size: 50px;
+  font-weight: 500;
+  padding: 0 0 10px 0;
+}
+
+.about .grid .main p {
+  font-size: 16px;
+  padding-right: 120px;
+  margin-bottom: 20px;
+}
+
+.about .grid .image div {
+  position: absolute;
+  width: 781px;
+  height: 527px;
+  left: 611px;
+  top: 1005px;
+  background-image: url(/img/about.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.product {
+  margin: 210px 150px 300px;
+}
+
+.product h1 {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.product .underline {
+  width: 200px;
+  height: 3px;
+  margin: 0 auto;
+  background-color: #343434;
+  margin-bottom: 40px;
+}
+
+.product .card {
+  margin-top: 40px;
+  color: #fff;
+  display: block;
+}
+
+.product .card p {
+  font-size: 13px;
+}
+
+.product .card h3 {
+  font-size: 20px;
+}
+
+.product .card img {
+  width: 350px;
+  height: 350px;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.product .card .grid {
+  background-color: #6370E5;
+  width: 350px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product .card .grid .buy {
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.product .card .grid button {
+  margin: 20px 0;
+  padding: 5px 30px;
+  border-radius: 30px;
+}
+
+.custom-shape-divider-bottom-1633511344 {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1633511344 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 184px;
+}
+
+.custom-shape-divider-bottom-1633511344 .shape-fill {
+  fill: #6370E5;
+}
+
+.contact {
+  background-color: #6370E5;
+  color: white;
+  padding: 200px 100px 60px;
+}
+
+.contact h1 {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.contact input::-webkit-input-placeholder,
+.contact textarea::-webkit-input-placeholder {
+  color: #C3C8F8;
+}
+
+.contact input:-ms-input-placeholder,
+.contact textarea:-ms-input-placeholder {
+  color: #C3C8F8;
+}
+
+.contact input::-ms-input-placeholder,
+.contact textarea::-ms-input-placeholder {
+  color: #C3C8F8;
+}
+
+.contact input::placeholder,
+.contact textarea::placeholder {
+  color: #C3C8F8;
+}
+
+@media (max-width: 575.98px) {
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .jumbo .grid {
+    height: auto;
+    display: block;
+  }
+  .jumbo .grid .sub-judul {
+    background-color: #6370E5;
+    padding: 200px 30px;
+    color: #fff;
+  }
+  .jumbo .grid .sub-judul p:nth-child(1) {
+    text-transform: uppercase;
+    font-size: 9px;
+    letter-spacing: 6px;
+  }
+  .jumbo .grid .sub-judul h1 {
+    font-size: 28px;
+    font-weight: 500;
+    padding: 0 0 10px 0;
+  }
+  .jumbo .grid .sub-judul p:nth-child(3) {
+    font-size: 16px;
+  }
+  .jumbo .grid .sub-judul button {
+    margin-top: 30px;
+    padding: 10px 25px;
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: #494949;
+  }
+  .jumbo .grid .image {
+    display: none;
+  }
+  .about .grid {
+    display: block;
+  }
+  .about .grid .main {
+    background-color: #343434;
+    color: #fff;
+    padding: 125px 30px;
+    display: block;
+  }
+  .about .grid .main h1 {
+    font-size: 28px;
+    font-weight: 500;
+    padding: 0 0 10px 0;
+  }
+  .about .grid .main p {
+    font-size: 12px;
+    margin-bottom: 20px;
+    text-align: justify;
+    padding-right: 0;
+  }
+  .about .grid .image div {
+    display: none;
+  }
+  .product {
+    margin: 120px 20px 300px;
+    display: block;
+  }
+  .product h1 {
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .product .underline {
+    width: 100px;
+    height: 1.5px;
+    margin: 0 auto;
+    background-color: #343434;
+    margin-bottom: 40px;
+  }
+  .product .grid {
+    display: block;
+  }
+  .product .card {
+    margin-top: 40px;
+    color: #fff;
+    display: block;
+  }
+  .product .card p {
+    font-size: 9px;
+  }
+  .product .card h3 {
+    font-size: 16px;
+  }
+  .product .card img {
+    width: 100%;
+    height: 200px;
+    -o-object-position: center;
+       object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .product .card .grid {
+    background-color: #6370E5;
+    width: 100%;
+    padding: 5px;
+  }
+  .product .card .grid button {
+    font-size: 14px;
+    margin: 20px 0;
+    padding: 3px 20px;
+    border-radius: 30px;
+  }
+  .custom-shape-divider-bottom-1633511344 {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  .custom-shape-divider-bottom-1633511344 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 84px;
+  }
+  .custom-shape-divider-bottom-1633511344 .shape-fill {
+    fill: #6370E5;
+  }
+  .contact {
+    background-color: #6370E5;
+    color: white;
+    padding: 100px 30px 60px;
+  }
+  .contact h1 {
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .contact input,
+  .contact textarea {
+    width: 100%;
+  }
+  .contact input::-webkit-input-placeholder,
+  .contact textarea::-webkit-input-placeholder {
+    color: #C3C8F8;
+  }
+  .contact input:-ms-input-placeholder,
+  .contact textarea:-ms-input-placeholder {
+    color: #C3C8F8;
+  }
+  .contact input::-ms-input-placeholder,
+  .contact textarea::-ms-input-placeholder {
+    color: #C3C8F8;
+  }
+  .contact input::placeholder,
+  .contact textarea::placeholder {
+    color: #C3C8F8;
+  }
+}
+/*# sourceMappingURL=style.css.map */
