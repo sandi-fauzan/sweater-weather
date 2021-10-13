@@ -1,5 +1,7 @@
 html {
   scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -48,37 +50,26 @@ body {
   background-position: center;
 }
 
-.about .grid .main {
+.about .main {
   background-color: #343434;
   color: #fff;
   padding: 285px 50px;
 }
 
-.about .grid .main h1 {
+.about .main h1 {
   font-size: 50px;
   font-weight: 500;
   padding: 0 0 10px 0;
 }
 
-.about .grid .main p {
+.about .main p {
   font-size: 16px;
   padding-right: 120px;
   margin-bottom: 20px;
 }
 
-.about .grid .image div {
-  position: absolute;
-  width: 781px;
-  height: 527px;
-  left: 611px;
-  top: 1005px;
-  background-image: url(/img/about.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
 .product {
-  margin: 210px 150px 300px;
+  margin: 210px 50px 300px;
 }
 
 .product h1 {
@@ -109,8 +100,8 @@ body {
 }
 
 .product .card img {
-  width: 350px;
-  height: 350px;
+  width: 100%;
+  height: 320px;
   -o-object-position: center;
      object-position: center;
   -o-object-fit: cover;
@@ -119,7 +110,7 @@ body {
 
 .product .card .grid {
   background-color: #6370E5;
-  width: 350px;
+  width: 100%;
   padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -185,6 +176,27 @@ body {
 .contact input::placeholder,
 .contact textarea::placeholder {
   color: #C3C8F8;
+}
+
+@media (max-width: 991.98px) {
+  .product {
+    margin: 210px 20px 300px;
+  }
+  .product .card {
+    margin-top: 10px;
+  }
+  .product .card h3 {
+    font-size: 16px;
+  }
+  .product .card p {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .product .grid {
+    display: block;
+  }
 }
 
 @media (max-width: 575.98px) {

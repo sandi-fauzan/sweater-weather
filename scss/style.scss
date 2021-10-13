@@ -2,6 +2,9 @@ $primary: #6370E5;
 
 html {
     scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
+
 }
 
 body {
@@ -53,7 +56,7 @@ body {
 
 
 
-.about .grid {
+.about {
     .main {
         background-color: #343434;
         color: #fff;
@@ -71,23 +74,10 @@ body {
             margin-bottom: 20px;
         }
     }
-
-    .image {
-        div {
-            position: absolute;
-            width: 781px;
-            height: 527px;
-            left: 611px;
-            top: 1005px;
-            background-image: url(/img/about.jpg);
-            background-size: cover;
-            background-position: center;
-        }
-    }
 }
 
 .product {
-    margin: 210px 150px 300px;
+    margin: 210px 50px 300px;
 
     h1 {
         font-size: 50px;
@@ -116,15 +106,15 @@ body {
         }
 
         img {
-            width: 350px;
-            height: 350px;
+            width: 100%;
+            height: 320px;
             object-position: center;
             object-fit: cover;
         }
 
         .grid {
             background-color: $primary;
-            width: 350px;
+            width: 100%;
             padding: 10px;
             display: flex;
 
@@ -179,6 +169,40 @@ body {
     }
 }
 
+
+//tablet device 
+@media (max-width: 991.98px) {
+
+    .product {
+        margin: 210px 20px 300px;
+    }
+
+    .product {
+        .card {
+            margin-top: 10px;
+
+            h3 {
+                font-size: 16px;
+            }
+
+            p {
+                font-size: 11px;
+            }
+        }
+    }
+
+}
+
+// Landscape Phone
+@media (max-width: 767.98px) {
+
+    .product {
+        .grid {
+            display: block;
+        }
+    }
+
+}
 
 
 // Mobile Device
