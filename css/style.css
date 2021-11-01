@@ -236,27 +236,27 @@ body {
   .jumbo .grid .image {
     display: none;
   }
-  .about .grid {
+  .about {
     display: block;
   }
-  .about .grid .main {
+  .about .main {
     background-color: #343434;
     color: #fff;
     padding: 125px 30px;
     display: block;
   }
-  .about .grid .main h1 {
+  .about .main h1 {
     font-size: 28px;
     font-weight: 500;
     padding: 0 0 10px 0;
   }
-  .about .grid .main p {
+  .about .main p {
     font-size: 12px;
     margin-bottom: 20px;
     text-align: justify;
     padding-right: 0;
   }
-  .about .grid .image div {
+  .about .image div {
     display: none;
   }
   .product {
